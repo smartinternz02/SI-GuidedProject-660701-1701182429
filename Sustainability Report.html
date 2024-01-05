@@ -1,0 +1,597 @@
+<!-- Licensed Materials - Property of IBM
+
+	IBM Cognos Products: Cognos Analytics
+
+	(C) Copyright IBM Corp. 2015, 2023
+
+	US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
+<!DOCTYPE html>
+<html itemscope lang="en" dir="ltr" class="chrome" style="font-size:16px;">
+	<head>
+		<meta charset="utf-8">
+		<meta content="images/logo_s.png" itemprop="image">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="msapplication-TileImage" content="images/logo_s.png">
+		<meta name="msapplication-TileColor" content="#26A9E1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+		<title>IBM Cognos Analytics</title>
+		<script src="lib/requirejs/2.1.14/require.js"></script>
+		<script src="lib/bundleManifest.js?v=709755189"></script>
+		<script src="js/glass/bundleManifest.js?v=709755189"></script>
+		<script src="js/ca-ui-common/bundleManifest.js?v=709755189"></script>
+		<script src="js/dashboard-features/bundleManifest.js?v=709755189"></script>
+		<script src="js/ca-content/bundleManifest.js?v=709755189"></script>
+		<script src="js/ca_portal/bundleManifest.js?v=709755189"></script>
+		<script src="js/gemini/bundleManifest.js?v=709755189"></script>
+		<script src="js/admin/bundleManifest.js?v=709755189"></script>
+		<script src="js/rs/bundleManifest.js?v=709755189"></script>
+		<script src="js/sharecommon/bundleManifest.js?v=709755189"></script>
+		<script src="js/dashboard-analytics/bundleManifest.js?v=709755189"></script>
+		<script src="js/storytelling/bundleManifest.js?v=709755189"></script>
+		<script src="js/collaboration/bundleManifest.js?v=709755189"></script>
+		<script src="ca-modeller/bridge/bundleManifest.js?v=709755189"></script>
+		<script id="queryString_data" type="text/template">pathRef=.my_folders%2FVisualizing%2BSustainability%2FSustainability%2BReport&amp;action=run&amp;format=HTML&amp;prompt=false</script>
+		<script id="startupInfo" type="text/json" urlArgs="v=709755189" clientLocale="en" factoryMode="false" uiPreview="false">
+			{"preferences":{"timeZoneID":"Asia\/Calcutta","skin":"Corporate","format":"HTML","isToolbarDocked":true,"backgroundSessionLogging":"1970-01-01 00:00:00","showHints":"hideAll","userName":"NM2023sb02410@smartinternz.com","type":"account","homePage":"","url":"\/bi\/v1\/users\/~\/preferences","accessibilityFeatures":false,"isAnonymous":false,"productLocale":"en","showHiddenObjects":false,"id":"xYmlkOnU6YWY4M2NhNjItYzFmNS00ZGE5LWI3MWYtOTk2M2IzYWU2ODY2LWIzNzg4ZDA1LTQ2NDctNDgwZC04N2YxLWJkZjI1MDA3M2RhZA__","cmmPortal":"","biDirectionalFeaturesEnabled":false,"defaultName":"Sudhans Shekhar Pandey (bdf250073dad)","contentLocale":"en-us","email":"sudhansh4u@gmail.com","baseTextDirection":"Auto"},"userProfileSettings":{"ui_excludedFeatures":{},"rootFolder_teamContent":".public_folders","parameter_values":{},"DatasetService.maxUploadSizeMBytes":100,"DatasetService.uploadTimeout":600000,"treeSettings":{"membersDisplay":"metadataWithMembers","customMemberLimit":15,"memberLimitExceededOption":"maxExceededShowMore","treeNavDepth":"allLevels","memberLimit":"defaultLimit"},"DatasetService.maxColumnsForUploadedFile":2000,"implicit_learning":true,"ui_loginPage":"login","ui_teamFolders":{},"DatasetService.maxRowsForDataSet":0,"ui_homePage":{"perspective":"home"},"data_asset":{},"ui_theme":"IBM_Modern","DatasetService.maxUploadSizeDatasetMBytes":0,"ui_showLearnMore":true,"DatasetService.maxColumnsForDataSet":0,"fileUpload_location":".my_folders","parameters":{},"rootFolder_CognosNamespace":"iAA5986CF844446A88E4A397320D5F957","DatasetService.enableEncryption":true,"DatasetService.maxStorageMBytes":500,"DatasetService.maxRowsForUploadedFile":0},"capabilities":["canUseCognosViewer","canUseCognosViewerContextMenu","canUseCognosViewerRunWithOptions","canUseCognosViewerSelection","canUseCognosViewerToolbar","canReceiveDetailedErrors","canUseDashboardViewerFileManagement","canUseShowHiddenObjectsPreference","canUseLineage","canUseScheduling","canUseObjectCapabilities","canUseReportStudio","canUseReportStudioFileManagement","canUseHTML","canUseUserDefinedSQL","canUseWebBasedModeling","canUploadFiles","canUseInteractiveDashboard","canUseExploration","canGenerateCSVOutput","canGeneratePDFOutput","canGenerateXLSOutput","canGenerateXMLOutput","canUseMyDataSets","canUseAdministrationPortal","canUseDataSourcesTool","canUsePortalAdministrationTool","canUseUsersGroupsAndRolesTool","canUseSchedulingByDay","canUseSchedulingByMonth","canUseSchedulingByWeek","canImportRelationalMetadata","canAuthorDashboard","canEmail","canAttach","canEmailAsDeliveryOption","canIncludeLinkInEmail","canShareUsingEmail","canTypeInEmail","canDevelopVisualizations","canManageVisualizations","canSaveToCloud","canManageCloudConnections","canUseAI","canUseAssistant","canAccessMobilePins","canSharePinBoard","canCreateAlerts","canLearnFromProductUsage","canEditBursting","canEditHTML","canEditUserDefinedSQL","canEditUserDefinedSQLinMUI","canUseUserDefinedSQLinMUI","canViewGeneratedQueryText"],"performance":{"\/bi\/v1\/login":45,"\/bi\/v1\/plugins\/themes\/current\/spec.json":68,"Configuration":1,"\/bi\/v1\/users\/~\/preferences":20,"\/bi\/v1\/users\/~\/credentials":31,"\/bi\/v1\/plugins\/themes\/current\/css\/palette.css":75,"\/bi\/v1\/perspectives\/global":175,"\/bi\/v1\/users\/~\/capabilities":31,"\/bi\/v1\/users\/~\/account":64,"\/bi\/v1\/users\/~\/identity":68,"\/bi\/v1\/users\/~\/user_profile_settings":24,"\/bi\/v1\/perspectives\/":1,"Elapsed":176,"\/bi\/v1\/metadata\/modules\/taxonomy":35},"credentials":false,"perspectives":[],"configuration":{"Glass.digitalContextEnabled":true,"ClientValidDomainList":"","Glass.disableWhatsNewAlerts":true,"Glass.disableAlertBanner":false,"Glass.learningPanelMode":"production","Watsonx.isWatsonxAIEnabled":false,"Mapbox.token":"pk.eyJ1IjoiaWJtcmF2ZSIsImEiOiJjaXRvZHFzdmYwM20zMnpzYmFxeHR4bTQyIn0.7rttWKsr9b1tVXpo0ZcWFw","Mapbox.accountName":"ibmrave","Configuration.LegacyLaunchable":1,"installInfo":"production","Mapbox.secretToken":"default","Glass.maintenanceMessage":"The upgrade is now complete. Click on More Info to see what actions may be necessary and to subscribe to future events","Glass.learningPanelServerUrlDevelopment":"https:\/\/cchhelp-test-ca.pac.test.cloud.ibm.com\/docs\/cch","ContentApps\/enableMyPortalPages":"false","Glass.learningPanelServerUrl":"https:\/\/cchhelp.pac.cloud.ibm.com\/docs\/cch","LibertyModeOnly":"true","DISP.zipi.IPAEnabled":"false","DatasetService\/urlQuerySize":4000,"Glass.maintenanceLink":"https:\/\/status.ca.analytics.ibm.com\/","Glass.learningPanelTokenDevelopment":"73130f02-5454-418f-8607-145a960ed1d3","CAF.caf_tpXSSCheckingUsed":false,"supportedContentLocales_":"{\"af\":\"Afrikaans\",\"af-za\":\"Afrikaans (South Africa)\",\"sq\":\"Albanian\",\"sq-al\":\"Albanian (Albania)\",\"am\":\"Amharic\",\"am-et\":\"Amharic (Ethiopia)\",\"ar\":\"Arabic\",\"ar-dz\":\"Arabic (Algeria)\",\"ar-bh\":\"Arabic (Bahrain)\",\"ar-eg\":\"Arabic (Egypt)\",\"ar-iq\":\"Arabic (Iraq)\",\"ar-jo\":\"Arabic (Jordan)\",\"ar-kw\":\"Arabic (Kuwait)\",\"ar-lb\":\"Arabic (Lebanon)\",\"ar-ly\":\"Arabic (Libya)\",\"ar-ma\":\"Arabic (Morocco)\",\"ar-om\":\"Arabic (Oman)\",\"ar-qa\":\"Arabic (Qatar)\",\"ar-sa\":\"Arabic (Saudi Arabia)\",\"ar-sy\":\"Arabic (Syria)\",\"ar-tn\":\"Arabic (Tunisia)\",\"ar-ae\":\"Arabic (United Arab Emirates)\",\"ar-ye\":\"Arabic (Yemen)\",\"hy\":\"Armenian\",\"hy-am\":\"Armenian (Armenia)\",\"as\":\"Assamese\",\"as-in\":\"Assamese (India)\",\"az\":\"Azerbaijani\",\"az-az\":\"Azerbaijani (Azerbaijan)\",\"eu\":\"Basque\",\"eu-es\":\"Basque (Spain)\",\"be\":\"Belarusian\",\"be-by\":\"Belarusian (Belarus)\",\"bn\":\"Bengali\",\"bn-in\":\"Bengali (India)\",\"bg\":\"Bulgarian\",\"bg-bg\":\"Bulgarian (Bulgaria)\",\"ca\":\"Catalan\",\"ca-es\":\"Catalan (Spain)\",\"zh\":\"Chinese\",\"zh-cn\":\"Chinese (China)\",\"zh-hk\":\"Chinese (Hong Kong SAR China)\",\"zh-mo\":\"Chinese (Macau SAR China)\",\"zh-sg\":\"Chinese (Singapore)\",\"zh-tw\":\"Chinese (Taiwan)\",\"hr\":\"Croatian\",\"hr-hr\":\"Croatian (Croatia)\",\"cs\":\"Czech\",\"cs-cz\":\"Czech (Czech Republic)\",\"da\":\"Danish\",\"da-dk\":\"Danish (Denmark)\",\"nl\":\"Dutch\",\"nl-be\":\"Dutch (Belgium)\",\"nl-nl\":\"Dutch (Netherlands)\",\"en\":\"English\",\"en-au\":\"English (Australia)\",\"en-be\":\"English (Belgium)\",\"en-bw\":\"English (Botswana)\",\"en-ca\":\"English (Canada)\",\"en-hk\":\"English (Hong Kong SAR China)\",\"en-in\":\"English (India)\",\"en-ie\":\"English (Ireland)\",\"en-mt\":\"English (Malta)\",\"en-nz\":\"English (New Zealand)\",\"en-ph\":\"English (Philippines)\",\"en-sg\":\"English (Singapore)\",\"en-za\":\"English (South Africa)\",\"en-vi\":\"English (U.S. Virgin Islands)\",\"en-gb\":\"English (United Kingdom)\",\"en-us\":\"English (United States)\",\"en-zw\":\"English (Zimbabwe)\",\"et\":\"Estonian\",\"et-ee\":\"Estonian (Estonia)\",\"fo\":\"Faroese\",\"fo-fo\":\"Faroese (Faroe Islands)\",\"fi\":\"Finnish\",\"fi-fi\":\"Finnish (Finland)\",\"fr\":\"French\",\"fr-be\":\"French (Belgium)\",\"fr-ca\":\"French (Canada)\",\"fr-fr\":\"French (France)\",\"fr-lu\":\"French (Luxembourg)\",\"fr-ch\":\"French (Switzerland)\",\"lg\":\"Ganda\",\"lg-ug\":\"Ganda (Uganda)\",\"ka\":\"Georgian\",\"ka-ge\":\"Georgian (Georgia)\",\"de\":\"German\",\"de-at\":\"German (Austria)\",\"de-be\":\"German (Belgium)\",\"de-de\":\"German (Germany)\",\"de-lu\":\"German (Luxembourg)\",\"de-ch\":\"German (Switzerland)\",\"el\":\"Greek\",\"el-gr\":\"Greek (Greece)\",\"gu\":\"Gujarati\",\"gu-in\":\"Gujarati (India)\",\"ha\":\"Hausa\",\"ha-ng\":\"Hausa (Nigeria)\",\"he\":\"Hebrew\",\"he-il\":\"Hebrew (Israel)\",\"hi\":\"Hindi\",\"hi-in\":\"Hindi (India)\",\"hu\":\"Hungarian\",\"hu-hu\":\"Hungarian (Hungary)\",\"is\":\"Icelandic\",\"is-is\":\"Icelandic (Iceland)\",\"id\":\"Indonesian\",\"id-id\":\"Indonesian (Indonesia)\",\"ga\":\"Irish\",\"ga-ie\":\"Irish (Ireland)\",\"it\":\"Italian\",\"it-it\":\"Italian (Italy)\",\"it-ch\":\"Italian (Switzerland)\",\"ja\":\"Japanese\",\"ja-jp\":\"Japanese (Japan)\",\"kn\":\"Kannada\",\"kn-in\":\"Kannada (India)\",\"kk\":\"Kazakh\",\"kk-kz\":\"Kazakh (Kazakhstan)\",\"km\":\"Khmer\",\"km-kh\":\"Khmer (Cambodia)\",\"rw\":\"Kinyarwanda\",\"rw-rw\":\"Kinyarwanda (Rwanda)\",\"ko\":\"Korean\",\"ko-kr\":\"Korean (South Korea)\",\"lv\":\"Latvian\",\"lv-lv\":\"Latvian (Latvia)\",\"lt\":\"Lithuanian\",\"lt-lt\":\"Lithuanian (Lithuania)\",\"mk\":\"Macedonian\",\"mk-mk\":\"Macedonian (Macedonia)\",\"ms\":\"Malay\",\"ms-bn\":\"Malay (Brunei)\",\"ms-my\":\"Malay (Malaysia)\",\"ml\":\"Malayalam\",\"ml-in\":\"Malayalam (India)\",\"mt\":\"Maltese\",\"mt-mt\":\"Maltese (Malta)\",\"mr\":\"Marathi\",\"mr-in\":\"Marathi (India)\",\"ne\":\"Nepali\",\"ne-in\":\"Nepali (India)\",\"ne-np\":\"Nepali (Nepal)\",\"no\":\"Norwegian\",\"no-no\":\"Norwegian (Norway)\",\"nb\":\"Norwegian Bokm\u00e5l\",\"nb-no\":\"Norwegian Bokm\u00e5l (Norway)\",\"nn\":\"Norwegian Nynorsk\",\"nn-no\":\"Norwegian Nynorsk (Norway)\",\"or\":\"Oriya\",\"or-in\":\"Oriya (India)\",\"om\":\"Oromo\",\"om-et\":\"Oromo (Ethiopia)\",\"om-ke\":\"Oromo (Kenya)\",\"pl\":\"Polish\",\"pl-pl\":\"Polish (Poland)\",\"pt\":\"Portuguese\",\"pt-br\":\"Portuguese (Brazil)\",\"pt-pt\":\"Portuguese (Portugal)\",\"pa\":\"Punjabi\",\"pa-in\":\"Punjabi (India)\",\"ro\":\"Romanian\",\"ro-ro\":\"Romanian (Romania)\",\"ru\":\"Russian\",\"ru-ru\":\"Russian (Russia)\",\"ru-ua\":\"Russian (Ukraine)\",\"sr\":\"Serbian\",\"sr-ba\":\"Serbian (Bosnia and Herzegovina)\",\"sr-me\":\"Serbian (Montenegro)\",\"sr-rs\":\"Serbian (Serbia)\",\"si\":\"Sinhala\",\"si-lk\":\"Sinhala (Sri Lanka)\",\"sk\":\"Slovak\",\"sk-sk\":\"Slovak (Slovakia)\",\"sl\":\"Slovenian\",\"sl-si\":\"Slovenian (Slovenia)\",\"so\":\"Somali\",\"so-dj\":\"Somali (Djibouti)\",\"so-et\":\"Somali (Ethiopia)\",\"so-ke\":\"Somali (Kenya)\",\"so-so\":\"Somali (Somalia)\",\"es\":\"Spanish\",\"es-ar\":\"Spanish (Argentina)\",\"es-bo\":\"Spanish (Bolivia)\",\"es-cl\":\"Spanish (Chile)\",\"es-co\":\"Spanish (Colombia)\",\"es-cr\":\"Spanish (Costa Rica)\",\"es-do\":\"Spanish (Dominican Republic)\",\"es-ec\":\"Spanish (Ecuador)\",\"es-sv\":\"Spanish (El Salvador)\",\"es-gt\":\"Spanish (Guatemala)\",\"es-hn\":\"Spanish (Honduras)\",\"es-mx\":\"Spanish (Mexico)\",\"es-ni\":\"Spanish (Nicaragua)\",\"es-pa\":\"Spanish (Panama)\",\"es-py\":\"Spanish (Paraguay)\",\"es-pe\":\"Spanish (Peru)\",\"es-pr\":\"Spanish (Puerto Rico)\",\"es-es\":\"Spanish (Spain)\",\"es-us\":\"Spanish (United States)\",\"es-uy\":\"Spanish (Uruguay)\",\"es-ve\":\"Spanish (Venezuela)\",\"sw\":\"Swahili\",\"sw-ke\":\"Swahili (Kenya)\",\"sw-tz\":\"Swahili (Tanzania)\",\"sv\":\"Swedish\",\"sv-fi\":\"Swedish (Finland)\",\"sv-se\":\"Swedish (Sweden)\",\"ta\":\"Tamil\",\"ta-in\":\"Tamil (India)\",\"te\":\"Telugu\",\"te-in\":\"Telugu (India)\",\"th\":\"Thai\",\"th-th\":\"Thai (Thailand)\",\"tr\":\"Turkish\",\"tr-tr\":\"Turkish (Turkey)\",\"uk\":\"Ukrainian\",\"uk-ua\":\"Ukrainian (Ukraine)\",\"ur\":\"Urdu\",\"ur-in\":\"Urdu (India)\",\"ur-pk\":\"Urdu (Pakistan)\",\"uz\":\"Uzbek\",\"uz-uz\":\"Uzbek (Uzbekistan)\",\"vi\":\"Vietnamese\",\"vi-vn\":\"Vietnamese (Vietnam)\",\"yo\":\"Yoruba\",\"yo-ng\":\"Yoruba (Nigeria)\",\"zu\":\"Zulu\",\"zu-za\":\"Zulu (South Africa)\"}","ssoInfo":{"logout":"https:\/\/myibm.ibm.com\/dashboard","login":"","urlLoginParameters":"sbsSubscriptionID,sbsSubscriptionId"},"zipi.IPAEnabled":"false","Glass.learningPanelToken":"6c2052d1-4230-4a31-a4ac-bdcef5c76ec4","InstallService.productVersion":"12.0.1","instrumentationConfig":{"scriptURL":"https:\/\/console.cloud.ibm.com\/analytics\/build\/bluemix-analytics.min.js","gbt10":"BX200","gbt15":"ATK","productID":"5725-U84","gbt17":"17CBI","ut30":"30ADZ","whitelist":false,"enabled":true,"gbt20":"BRS00","allowlist":true,"productTitle":"Cognos Analytics","allowlistedValues":"perspective","productCode":"30ADZ","spaEnabled":false,"productCodeType":"5725U84","category":"InProduct","instanceGuid":"","gbtlvlcd":"20","key":"OkJ9Kq2VobUkh0dcHoBSdXCImK7ol9VP","whitelistedValues":""},"featureRules":"{}"},"identity":{"data":[{"searchPath":"CAMID(\"bid:u:af83ca62-c1f5-4da9-b71f-9963b3ae6866-b3788d05-4647-480d-87f1-bdf250073dad\")","id":"xYmlkOnU6YWY4M2NhNjItYzFmNS00ZGE5LWI3MWYtOTk2M2IzYWU2ODY2LWIzNzg4ZDA1LTQ2NDctNDgwZC04N2YxLWJkZjI1MDA3M2RhZA__","type":"account","defaultName":"Sudhans Shekhar Pandey (bdf250073dad)"},{"searchPath":"CAMID(\"bid:g:Cloud Default\")","id":"xYmlkOmc6Q2xvdWQgRGVmYXVsdA__","type":"group","defaultName":"Cloud Default"},{"searchPath":"CAMID(\"bid:g:Cloud Premium\")","id":"xYmlkOmc6Q2xvdWQgUHJlbWl1bQ__","type":"group","defaultName":"Cloud Premium"},{"searchPath":"CAMID(\"bid:g:Cloud Administration\")","id":"xYmlkOmc6Q2xvdWQgQWRtaW5pc3RyYXRpb24_","type":"group","defaultName":"Cloud Administration"},{"searchPath":"CAMID(\"::Everyone\")","id":"xOjpFdmVyeW9uZQ__","type":"group","defaultName":"Everyone"},{"searchPath":"CAMID(\"::All Authenticated Users\")","id":"xOjpBbGwgQXV0aGVudGljYXRlZCBVc2Vycw__","type":"group","defaultName":"All Authenticated Users"},{"searchPath":"CAMID(\":Administration\")","id":"xOkFkbWluaXN0cmF0aW9u","type":"role","defaultName":"Administration"},{"searchPath":"CAMID(\":Premium\")","id":"xOlByZW1pdW0_","type":"role","defaultName":"Premium"},{"searchPath":"CAMID(\":Cognos Analytics on Cloud\")","id":"xOkNvZ25vcyBBbmFseXRpY3Mgb24gQ2xvdWQ_","type":"role","defaultName":"Cognos Analytics on Cloud"},{"searchPath":"CAMID(\":\")","id":"xOg__","type":"namespace","defaultName":"Cognos"},{"searchPath":"CAMID(\"bid\")","id":"xYmlk","type":"namespace","defaultName":"bid"}]},"userAccount":{"faxPhone":null,"creationTime":"2023-11-22T12:53:59.866Z","teamContent":".public_folders","_meta":{"schemaInfo":{"faxPhone":{"acquirable":false,"modifiable":false,"searchable":false,"acquired":false},"creationTime":{"acquirable":false,"modifiable":false,"searchable":true,"acquired":false},"givenName":{"acquirable":false,"modifiable":false,"searchable":true,"acquired":false},"homePhone":{"acquirable":false,"modifiable":false,"searchable":false,"acquired":false},"format":{"acquirable":false,"modifiable":true,"searchable":true,"acquired":false},"userName":{"acquirable":false,"modifiable":false,"searchable":true,"acquired":false},"storeID":{"acquirable":false,"modifiable":false,"searchable":false,"acquired":false},"extensions":{"acquirable":false,"modifiable":true,"searchable":false,"acquired":false},"password":{"acquirable":false,"modifiable":false,"searchable":false,"acquired":false},"mobileDeviceID":{"acquirable":false,"modifiable":true,"searchable":false,"acquired":false},"postalAddress":{"acquirable":false,"modifiable":false,"searchable":false,"acquired":false},"mobilePhone":{"acquirable":false,"modifiable":false,"searchable":false,"acquired":false},"pagerPhone":{"acquirable":false,"modifiable":false,"searchable":false,"acquired":false},"surname":{"acquirable":false,"modifiable":false,"searchable":true,"acquired":false},"modificationTime":{"acquirable":false,"modifiable":false,"searchable":true,"acquired":false},"tenantID":{"acquirable":false,"modifiable":true,"searchable":true,"acquired":false},"productLocale":{"acquirable":false,"modifiable":true,"searchable":false,"acquired":true},"businessPhone":{"acquirable":false,"modifiable":false,"searchable":true,"acquired":false},"defaultName":{"acquirable":false,"modifiable":false,"searchable":true,"acquired":false},"email":{"acquirable":false,"modifiable":true,"searchable":true,"acquired":false},"contentLocale":{"acquirable":false,"modifiable":true,"searchable":false,"acquired":true},"notificationEMail":{"acquirable":false,"modifiable":true,"searchable":false,"acquired":false}},"links":{"self":{"mimeType":"application\/vnd.ibm.bi.account+json","url":"\/bi\/v1\/objects\/xYmlkOnU6YWY4M2NhNjItYzFmNS00ZGE5LWI3MWYtOTk2M2IzYWU2ODY2LWIzNzg4ZDA1LTQ2NDctNDgwZC04N2YxLWJkZjI1MDA3M2RhZA__"},"items":{"mimeType":"application\/json","url":"\/bi\/v1\/objects\/xYmlkOnU6YWY4M2NhNjItYzFmNS00ZGE5LWI3MWYtOTk2M2IzYWU2ODY2LWIzNzg4ZDA1LTQ2NDctNDgwZC04N2YxLWJkZjI1MDA3M2RhZA__\/items"}}},"type":"account","isSystemAdmin":false,"isTenantAdmin":false,"surname":"Pandey","modificationTime":"2024-01-05T08:27:45.165Z","tenantID":"af83ca62-c1f5-4da9-b71f-9963b3ae6866","productLocale":null,"id":"xYmlkOnU6YWY4M2NhNjItYzFmNS00ZGE5LWI3MWYtOTk2M2IzYWU2ODY2LWIzNzg4ZDA1LTQ2NDctNDgwZC04N2YxLWJkZjI1MDA3M2RhZA__","defaultName":"Sudhans Shekhar Pandey (bdf250073dad)","email":"sudhansh4u@gmail.com","notificationEMail":null,"givenName":"Sudhans Shekhar","homePhone":null,"format":"HTML","cognosNamespace":"iAA5986CF844446A88E4A397320D5F957","userName":"NM2023sb02410@smartinternz.com","isAnonymous":false,"mobileDeviceID":null,"postalAddress":null,"mobilePhone":null,"pagerPhone":null,"businessPhone":null,"contentLocale":null},"taxonomy":{"domain":[{"identifier":"cognos","label":"Cognos","class":[{"identifier":"cNone","label":"None","family":[{"identifier":"cNone","label":"None"}]},{"identifier":"cGeoLocation","label":"Geographic location","family":[{"identifier":"cContinent","label":"Continent"},{"identifier":"cSubContinent","label":"Subcontinent"},{"identifier":"cCountry","label":"Country"},{"identifier":"cRegion","label":"Region"},{"identifier":"cStateProvince","label":"State\/Province"},{"identifier":"cCounty","label":"County"},{"identifier":"cCity","label":"City"},{"identifier":"cPostalCode","label":"Postal code"},{"identifier":"cStreetAddress","label":"Street address"},{"identifier":"cPosition","label":"Position"},{"identifier":"cLatitude","label":"Latitude"},{"identifier":"cLongitude","label":"Longitude"}]},{"identifier":"cTime","label":"Time","family":[{"identifier":"cDate","label":"Date"},{"identifier":"cYear","label":"Year"},{"identifier":"cQuarter","label":"Quarter"},{"identifier":"cSeason","label":"Season"},{"identifier":"cMonth","label":"Month"},{"identifier":"cWeek","label":"Week"},{"identifier":"cDay","label":"Day"},{"identifier":"cHour","label":"Hour"},{"identifier":"cMinute","label":"Minute"},{"identifier":"cSecond","label":"Second"}]}]}]},"versionInfo":"12.0.1-2310020500","authInfo":{"generation":3,"isAnonymous":false,"cafContextId":"CAFW000000dcQ0FGQThjMDAwMDAwMDlBaFFBQUFBWUdaTDhmTTd5VjRXYzA1VzJkeW9KQTBnSWxnY0FBQUJUU0VFdE5URXlRQUFBQU1HQ1dMdjJTcXRKZXo5UHhXNDhHTDNUQWZoSHNjcUNXNnVwOG1zeHNtQ3NTc0Q1cURPaWJSdnJQZFdHTHEwb2Q1SG9xMUxBOWVJc2tZQzBGelpqM3hjXzQ3MzQ1Nnxycw__","logEnabled":false,"canCallLogon":false,"url":"\/bi\/v1"}}
+		</script>
+		<script src="js/config.min.js?v=709755189"></script>
+		<script src="js/Entry.min.js?v=709755189"></script>
+		</script>
+			<style id="ba-splash-styles">
+			.ba-splash {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+}
+
+.ba-splash .ba-splash-center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@keyframes ba-splash-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.ba-splash-loading {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	border: 0;
+	animation-name: ba-splash-rotate;
+	animation-duration: 690ms;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	width: 10.5rem;
+	height: 10.5rem;
+}
+
+.ba-splash-loading *,
+.ba-splash-loading *::before,
+.ba-splash-loading *::after {
+	box-sizing: inherit;
+}
+
+.ba-splash-loading svg circle {
+	animation-name: init-stroke;
+	animation-duration: 10ms;
+	animation-timing-function: cubic-bezier(0.2, 0, 0.38, 0.9);
+}
+
+.ba-splash-loading__svg {
+	fill: transparent;
+}
+
+.ba-splash-loading__svg circle {
+	stroke-width: 8;
+	stroke-linecap: butt;
+	stroke-dasharray: 240;
+}
+
+.ba-splash-loading__stroke {
+	stroke: #0f62fe;
+	stroke-dashoffset: 40;
+}
+			</style>
+		<link href="lib/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/ca-ui-common/ca-ui-normalize.min.css?v=709755189">
+		<link rel="stylesheet" href="css/ca-ui-common/ca-ui-carbon.min.css?v=709755189">
+		<link rel="stylesheet" href="css/glass/glass.min.css?v=709755189">
+		<link rel="stylesheet" href="css/ca_portal/ca-portal.css?v=709755189">
+		<link rel="stylesheet" href="css/ca-content/content.css?v=709755189">
+		<style>
+		.toolpane.themeable {
+	background-color: inherit;
+	color: inherit;
+}
+
+.toolpane.themeable button:focus,
+.toolpane.themeable button:hover,
+.toolpane.themeable a.logoText:hover,
+.toolpane.themeable .webfont:hover:before,
+.toolpane.themeable button.cognosLabel.currentlySelected,
+.toolpane.themeable button.cognosLabel:active,
+.toolpane.themeable button:active,
+.toolpane.themeable button.menu.currentlySelected,
+.toolpane.themeable button.currentlySelected.slideoutOpen,
+.toolpane.themeable span.is-checked button,
+.toolpane.themeable button.pushed {
+	background-color: inherit;
+}
+.toolpane.themeable button:focus,
+.toolpane.themeable .webfont:hover:before,
+.toolpane.themeable button:active,
+.toolpane.themeable a.logoText:active,
+.toolpane.themeable button.menu.currentlySelected,
+.toolpane.themeable button.currentlySelected.slideoutOpen {
+	border: 2px solid inherit;
+}
+
+.toolpane.themeable .svgIcon,
+.toolpane.themeable button:hover .svgIcon,
+.toolpane.themeable .pluginContainer button .svgIcon,
+.toolpane.themeable .pluginContainer button:hover .svgIcon,
+.toolpane.themeable .pluginContainer button .ba-common-svgIcon,
+.toolpane.themeable .pluginContainer button:hover .ba-common-svgIcon {
+	fill: inherit;
+}
+
+.toolpane.themeable .svgIcon,
+.toolpane.themeable button .svgIcon {
+	height: 20px;
+	width: 20px;
+}
+
+.toolpane.appbar {
+	background-color: #161616;
+	color: #fff;
+}
+
+.toolpane.appbar button:focus,
+.toolpane.appbar button:hover,
+.toolpane.appbar a.logoText:hover,
+.toolpane.appbar .webfont:hover:before,
+.toolpane.appbar button.cognosLabel.currentlySelected,
+.toolpane.appbar button.cognosLabel:active,
+.toolpane.appbar button:active,
+.toolpane.appbar button.menu.currentlySelected,
+.toolpane.appbar button.currentlySelected.slideoutOpen,
+.toolpane.appbar span.is-checked button,
+.toolpane.appbar button.pushed {
+	background-color: #393939;
+}
+.toolpane.appbar button:focus,
+.toolpane.appbar .webfont:hover:before,
+.toolpane.appbar button:active,
+.toolpane.appbar a.logoText:active,
+.toolpane.appbar button.menu.currentlySelected,
+.toolpane.appbar button.currentlySelected.slideoutOpen {
+	border: 2px solid #fff;
+}
+
+.toolpane.appbar .svgIcon,
+.toolpane.appbar button:hover .svgIcon,
+.toolpane.appbar .pluginContainer button .svgIcon,
+.toolpane.appbar .pluginContainer button:hover .svgIcon,
+.toolpane.appbar .pluginContainer button .ba-common-svgIcon,
+.toolpane.appbar .pluginContainer button:hover .ba-common-svgIcon {
+	fill: #fff;
+}
+
+.appbar .svgIcon,
+.appbar button .svgIcon {
+	height: 20px;
+	width: 20px;
+}
+
+.toolpane.navbar {
+	background-color: #fff;
+	color: #161616;
+}
+
+.toolpane.navbar span.is-checked button,
+.toolpane.navbar button.pushed,
+.toolpane.navbar button:active,
+.toolpane.navbar button.menu.currentlySelected,
+.toolpane.navbar button.currentlySelected.slideoutOpen {
+	border-left: 4px solid #0f62fe;
+}
+.toolpane.navbar button:focus,
+.toolpane.navbar button:hover {
+	background-color: #e5e5e5;
+}
+.toolpane.navbar .ba-common-button.is-variant_icon:hover:not(.is-disabled):not(.is-tap).is-intent_primary {
+	color: #161616;
+}
+.toolpane.navbar button {
+	font-weight: 600;
+}
+.toolpane.navbar .pluginContainer .ba-pushbutton button .ba-common-button__layout .ba-common-button__label {
+	font-weight: 600;
+}
+
+.toolpane.navbar button:active,
+.toolpane.navbar button.menu.currentlySelected,
+.toolpane.navbar button.currentlySelected.slideoutOpen,
+.toolpane.navbar span.is-checked button,
+.toolpane.navbar button.pushed{
+	background-color: #e0e0e0;
+}
+
+.navbar .svgIcon,
+.navbar button:hover .svgIcon {
+	fill: #161616;
+}
+
+.navbar .svgIcon,
+.navbar button .svgIcon {
+	height: 20px;
+	width: 20px;
+}
+
+.toolpane.navbar button[id="com.ibm.bi.glass.common.home"] {
+	border-bottom: 1px solid #e0e0e0;
+}
+.toolpane.navbar button.menu.createMenuButton {
+	border-top: 1px solid #e0e0e0;
+}
+.toolpane.navbar, body:not(.highcontrast) .toolpane.navbar {
+	border-right: 1px solid #e0e0e0;
+}
+
+#com\.ibm\.bi\.cahome\.cognosLogoPluginContainer .logoText.enabled {
+	padding-top: 12px;
+}
+
+:root {
+	--appbarBackground: #161616;
+	--appbarForeground: #fff;
+	--appbarSelectLine: #fff;
+	--appbarPushButtonBackground: #393939;
+	--navbarBackground: #fff;
+	--navbarForeground: #161616;
+	--navbarSelectLine: #0f62fe;
+	--navbarPushButtonBackground: #e0e0e0;
+	--toolbarBackground: inherit;
+	--toolbarForeground: inherit;
+	--toolbarSelectLine: inherit;
+	--toolbarPushButtonBackground: inherit;
+
+	--primary1-h: 219.16318;
+	--primary1-s: 99.17012%;
+	--primary1-l: 52.7451%;
+	--primary2-h: 218.06452;
+	--primary2-s: 100%;
+	--primary2-l: 63.52941%;
+	--primary3-h: 222.69231;
+	--primary3-s: 100%;
+	--primary3-l: 30.58824%;
+	--secondary1-h: 180;
+	--secondary1-s: 80.95238%;
+	--secondary1-l: 91.76471%;
+	--secondary2-h: 179.24051;
+	--secondary2-s: 68.69565%;
+	--secondary2-l: 54.90196%;
+	--secondary3-h: 178.8535;
+	--secondary3-s: 100%;
+	--secondary3-l: 30.78431%;
+	--communication1-h: 137.28;
+	--communication1-s: 63.45178%;
+	--communication1-l: 38.62745%;
+	--communication1Light-h: 137.28;
+	--communication1Light-s: 63.45178%;
+	--communication1Light-l: 58.62745%;
+	--communication1Dark-h: 137.28;
+	--communication1Dark-s: 63.45178%;
+	--communication1Dark-l: 18.62745%;
+	--communication2-h: 46.82243;
+	--communication2-s: 88.42975%;
+	--communication2-l: 52.54902%;
+	--communication2Light-h: 46.82243;
+	--communication2Light-s: 88.42975%;
+	--communication2Light-l: 72.54902%;
+	--communication2Dark-h: 46.82243;
+	--communication2Dark-s: 88.42975%;
+	--communication2Dark-l: 32.54902%;
+	--communication3-h: 356.80851;
+	--communication3-s: 75.80645%;
+	--communication3-l: 48.62745%;
+	--communication3Light-h: 356.80851;
+	--communication3Light-s: 75.80645%;
+	--communication3Light-l: 68.62745%;
+	--communication3Dark-h: 356.80851;
+	--communication3Dark-s: 75.80645%;
+	--communication3Dark-l: 28.62745%;
+	--focus-h: 219.16318;
+	--focus-s: 99.17012%;
+	--focus-l: 52.7451%;
+	--background-color-h: 0;
+	--background-color-s: 0%;
+	--background-color-l: 100%;
+	--background-color-subtle-h: 0;
+	--background-color-subtle-s: 0%;
+	--background-color-subtle-l: 96.47059%;
+	--background-color-hover-h: 0;
+	--background-color-hover-s: 0%;
+	--background-color-hover-l: 95.68627%;
+	--black-h: 0;
+	--black-s: 0%;
+	--black-l: 0%;
+	--gray1-h: 0;
+	--gray1-s: 0%;
+	--gray1-l: 87.84314%;
+	--gray5-h: 0;
+	--gray5-s: 0%;
+	--gray5-l: 8.62745%;
+	--neutral-color-light-h: 0;
+	--neutral-color-light-s: 0%;
+	--neutral-color-light-l: 77.64706%;
+	--neutral-color-h: 0;
+	--neutral-color-s: 0%;
+	--neutral-color-l: 22.35294%;
+	--neutral1-h: 0;
+	--neutral1-s: 0%;
+	--neutral1-l: 95.68627%;
+	--neutral3-h: 0;
+	--neutral3-s: 0%;
+	--neutral3-l: 96.47059%;
+	--separator-color-h: 0;
+	--separator-color-s: 0%;
+	--separator-color-l: 65.88235%;
+	--separator-color-light-h: 0;
+	--separator-color-light-s: 0%;
+	--separator-color-light-l: 87.84314%;
+	--status-danger-h: 356.80851;
+	--status-danger-s: 75.80645%;
+	--status-danger-l: 48.62745%;
+	--status-info-h: 0;
+	--status-info-s: 0%;
+	--status-info-l: 22.35294%;
+	--status-positive-h: 137.28;
+	--status-positive-s: 63.45178%;
+	--status-positive-l: 38.62745%;
+	--status-selection-h: 0;
+	--status-selection-s: 0%;
+	--status-selection-l: 87.84314%;
+	--status-warning-h: 46.82243;
+	--status-warning-s: 88.42975%;
+	--status-warning-l: 52.54902%;
+	--text-color-h: 0;
+	--text-color-s: 0%;
+	--text-color-l: 8.62745%;
+	--gray3-h: 0;
+	--gray3-s: 0%;
+	--gray3-l: 65.88235%;
+	--gray4-h: 0;
+	--gray4-s: 0%;
+	--gray4-l: 22.35294%;
+	--secondary-background-h: 0;
+	--secondary-background-s: 0%;
+	--secondary-background-l: 22.35294%;
+	--secondary-hover-h: 0;
+	--secondary-hover-s: 0%;
+	--secondary-hover-l: 22.35294%;
+	--secondary-color-h: 0;
+	--secondary-color-s: 0%;
+	--secondary-color-l: 100%;
+	--secondary-border-h: 0;
+	--secondary-border-s: 0%;
+	--secondary-border-l: 22.35294%;
+	--secondary-active-h: 0;
+	--secondary-active-s: 0%;
+	--secondary-active-l: 43.52941%;
+	--ui-background-h: 0;
+	--ui-background-s: 0%;
+	--ui-background-l: 95.68627%;
+	--interactive-01-h: 219.16318;
+	--interactive-01-s: 99.17012%;
+	--interactive-01-l: 52.7451%;
+	--interactive-02-h: 0;
+	--interactive-02-s: 0%;
+	--interactive-02-l: 22.35294%;
+	--interactive-03-h: 219.16318;
+	--interactive-03-s: 99.17012%;
+	--interactive-03-l: 52.7451%;
+	--interactive-04-h: 219.16318;
+	--interactive-04-s: 99.17012%;
+	--interactive-04-l: 52.7451%;
+	--danger-h: 356.80851;
+	--danger-s: 75.80645%;
+	--danger-l: 48.62745%;
+	--ui-01-h: 0;
+	--ui-01-s: 0%;
+	--ui-01-l: 100%;
+	--ui-02-h: 0;
+	--ui-02-s: 0%;
+	--ui-02-l: 95.68627%;
+	--ui-03-h: 0;
+	--ui-03-s: 0%;
+	--ui-03-l: 87.84314%;
+	--ui-04-h: 0;
+	--ui-04-s: 0%;
+	--ui-04-l: 55.29412%;
+	--ui-05-h: 0;
+	--ui-05-s: 0%;
+	--ui-05-l: 8.62745%;
+	--text-01-h: 0;
+	--text-01-s: 0%;
+	--text-01-l: 8.62745%;
+	--text-02-h: 0;
+	--text-02-s: 0%;
+	--text-02-l: 22.35294%;
+	--text-03-h: 0;
+	--text-03-s: 0%;
+	--text-03-l: 65.88235%;
+	--text-04-h: 0;
+	--text-04-s: 0%;
+	--text-04-l: 100%;
+	--text-05-h: 0;
+	--text-05-s: 0%;
+	--text-05-l: 43.52941%;
+	--text-error-h: 356.80851;
+	--text-error-s: 75.80645%;
+	--text-error-l: 48.62745%;
+	--link-01-h: 219.16318;
+	--link-01-s: 99.17012%;
+	--link-01-l: 52.7451%;
+	--inverse-link-h: 218.22222;
+	--inverse-link-s: 100%;
+	--inverse-link-l: 73.52941%;
+	--icon-01-h: 0;
+	--icon-01-s: 0%;
+	--icon-01-l: 8.62745%;
+	--icon-02-h: 0;
+	--icon-02-s: 0%;
+	--icon-02-l: 32.15686%;
+	--icon-03-h: 0;
+	--icon-03-s: 0%;
+	--icon-03-l: 100%;
+	--field-01-h: 0;
+	--field-01-s: 0%;
+	--field-01-l: 100%;
+	--field-02-h: 0;
+	--field-02-s: 0%;
+	--field-02-l: 95.68627%;
+	--inverse-01-h: 0;
+	--inverse-01-s: 0%;
+	--inverse-01-l: 100%;
+	--inverse-02-h: 0;
+	--inverse-02-s: 0%;
+	--inverse-02-l: 22.35294%;
+	--support-01-h: 356.80851;
+	--support-01-s: 75.80645%;
+	--support-01-l: 48.62745%;
+	--support-02-h: 137.28;
+	--support-02-s: 63.45178%;
+	--support-02-l: 38.62745%;
+	--support-03-h: 46.82243;
+	--support-03-s: 88.42975%;
+	--support-03-l: 52.54902%;
+	--support-04-h: 220.48544;
+	--support-04-s: 100%;
+	--support-04-l: 40.39216%;
+	--inverse-support-01-h: 356.87861;
+	--inverse-support-01-s: 94.53552%;
+	--inverse-support-01-l: 64.11765%;
+	--inverse-support-02-h: 136.93548;
+	--inverse-support-02-s: 48.8189%;
+	--inverse-support-02-l: 50.19608%;
+	--inverse-support-03-h: 46.82243;
+	--inverse-support-03-s: 88.42975%;
+	--inverse-support-03-l: 52.54902%;
+	--inverse-support-04-h: 218.06452;
+	--inverse-support-04-s: 100%;
+	--inverse-support-04-l: 63.52941%;
+	--overlay-01-h: 0;
+	--overlay-01-s: 0%;
+	--overlay-01-l: 8.62745%;
+	--inverse-focus-ui-h: 0;
+	--inverse-focus-ui-s: 0%;
+	--inverse-focus-ui-l: 100%;
+	--hover-primary-h: 219.13043;
+	--hover-primary-s: 97.45763%;
+	--hover-primary-l: 46.27451%;
+	--hover-primary-text-h: 220.48544;
+	--hover-primary-text-s: 100%;
+	--hover-primary-text-l: 40.39216%;
+	--hover-secondary-h: 0;
+	--hover-secondary-s: 0%;
+	--hover-secondary-l: 29.80392%;
+	--hover-tertiary-h: 219.13043;
+	--hover-tertiary-s: 97.45763%;
+	--hover-tertiary-l: 46.27451%;
+	--hover-ui-h: 0;
+	--hover-ui-s: 0%;
+	--hover-ui-l: 89.80392%;
+	--hover-selected-ui-h: 0;
+	--hover-selected-ui-s: 0%;
+	--hover-selected-ui-l: 79.21569%;
+	--hover-danger-h: 356.98113;
+	--hover-danger-s: 74.64789%;
+	--hover-danger-l: 41.76471%;
+	--hover-row-h: 0;
+	--hover-row-s: 0%;
+	--hover-row-l: 89.80392%;
+	--inverse-hover-ui-h: 0;
+	--inverse-hover-ui-s: 0%;
+	--inverse-hover-ui-l: 29.80392%;
+	--active-primary-h: 222.69231;
+	--active-primary-s: 100%;
+	--active-primary-l: 30.58824%;
+	--active-secondary-h: 0;
+	--active-secondary-s: 0%;
+	--active-secondary-l: 43.52941%;
+	--active-tertiary-h: 222.69231;
+	--active-tertiary-s: 100%;
+	--active-tertiary-l: 30.58824%;
+	--active-ui-h: 0;
+	--active-ui-s: 0%;
+	--active-ui-l: 77.64706%;
+	--active-danger-h: 357.08738;
+	--active-danger-s: 78.62595%;
+	--active-danger-l: 25.68627%;
+	--selected-ui-h: 0;
+	--selected-ui-s: 0%;
+	--selected-ui-l: 87.84314%;
+	--highlight-h: 213.33333;
+	--highlight-s: 100%;
+	--highlight-l: 96.47059%;
+	--skeleton-01-h: 0;
+	--skeleton-01-s: 0%;
+	--skeleton-01-l: 89.80392%;
+	--skeleton-02-h: 0;
+	--skeleton-02-s: 0%;
+	--skeleton-02-l: 77.64706%;
+	--visited-link-h: 263.80952;
+	--visited-link-s: 96.92308%;
+	--visited-link-l: 61.76471%;
+	--disabled-01-h: 0;
+	--disabled-01-s: 0%;
+	--disabled-01-l: 100%;
+	--disabled-02-h: 0;
+	--disabled-02-s: 0%;
+	--disabled-02-l: 77.64706%;
+	--disabled-03-h: 0;
+	--disabled-03-s: 0%;
+	--disabled-03-l: 55.29412%;
+}
+
+		</style>
+		<script id="prefetchModules" src="js/prefetch.min.js" defer></script>
+		<link rel="apple-touch-icon" href="v1/plugins/themes/current/favicon?v=1704443378531" class="themeressource">
+		<link rel="icon" href="v1/plugins/themes/current/favicon?v=1704443378531" class="themeressource">
+		<link href="css/glass/login-mobile.min.css?v=709755189" rel="stylesheet">
+		<link rel="shortcut icon" href="v1/plugins/themes/current/favicon?v=1704443378531" class="themeressource">
+	</head>
+	<body class="wireframe glass ui-shell-g100">
+		<div id="main" class="pane"></div>
+		<div class="ba-splash">
+		<div class="ba-splash-center">
+			<div aria-atomic="true" aria-labelledby="loading-id-1" aria-live="assertive" class="ba-splash-loading"><label
+					id="loading-id-1" class="ba-splash-visually-hidden"></label><svg class="ba-splash-loading__svg"
+					viewBox="-75 -75 150 150">
+					<title></title>
+					<circle class="ba-splash-loading__stroke" cx="0" cy="0" r="37.5"></circle>
+				</svg></div>
+		</div>
+	</div>
+	</body>
+</html>
